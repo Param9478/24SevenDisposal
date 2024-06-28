@@ -5,7 +5,7 @@ const SafeSecure = ({ title, text, imageUrl, altText }) => {
   return (
     <section
       id="safeSecure"
-      className="container mx-auto flex flex-col md:flex-row items-center py-20"
+      className="container mx-auto flex flex-col md:flex-row items-center py-20  text-center sm:text-left"
     >
       <div className="md:w-1/2 md:pr-4">
         <h2 className="text-2xl font-bold mb-2">Safe & Secure Bins</h2>

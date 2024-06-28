@@ -15,7 +15,8 @@ const Header = () => {
     <Disclosure
       as="nav"
       className="fixed w-full z-50 top-0"
-      style={{ backgroundColor: '#191919' }}
+      style={{ backgroundColor: '#111827' }}
+      // style={{ backgroundColor: '#191919' }}
     >
       {({ open }) => (
         <>

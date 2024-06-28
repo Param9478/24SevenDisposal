@@ -1,7 +1,7 @@
 import React from 'react';
 import { useSpring, animated } from 'react-spring';
 
-const Testimonials = () => {
+const Testimonials2 = () => {
   const animation = useSpring({
     from: { opacity: 0, transform: 'translateX(100px)' },
     to: { opacity: 1, transform: 'translateX(0)' },
@@ -36,4 +36,4 @@ const Testimonials = () => {
   );
 }
 
-export default Testimonials;
+export default Testimonials2;
