@@ -36,7 +36,7 @@ const Banner = () => {
         </p>
         <a
           href="#contact"
-          className="bg-yellow-500 hover:bg-yellow-600 text-white py-3 px-6 rounded-full inline-block transition duration-300"
+          className="bg-orange-500 hover:bg-orange-600 text-white py-3 px-6 rounded-full inline-block transition duration-300"
         >
           Get a Quote
         </a>

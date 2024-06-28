@@ -18,7 +18,7 @@ const Contact = () => {
               <textarea placeholder="Your Message" rows="4" className="w-full bg-gray-700 text-white py-2 px-4 rounded-lg outline-none focus:bg-gray-600"></textarea>
             </div>
             <div className="w-full px-2 mb-4">
-              <button type="submit" className="bg-yellow-500 hover:bg-yellow-600 text-white py-3 px-6 rounded-full inline-block transition duration-300">Send Message</button>
+              <button type="submit" className="bg-orange-500 hover:bg-orange-600 text-white py-3 px-6 rounded-full inline-block transition duration-300">Send Message</button>
             </div>
           </div>
         </form>

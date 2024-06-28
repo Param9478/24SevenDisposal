@@ -46,7 +46,7 @@ const Header = () => {
                       target={item.target}
                       className={`rounded-md px-3 py-3 text-sm ${
                         item.current
-                          ? 'text-white bg-yellow-500'
+                          ? 'text-white bg-orange-500'
                           : 'text-gray-300 hover:bg-gray-700 hover:text-white'
                       }`}
                       aria-current={item.current ? 'page' : undefined}

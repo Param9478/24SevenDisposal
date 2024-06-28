@@ -25,7 +25,7 @@ const Services = () => {
             style={animation}
             className="p-6 bg-white shadow-lg rounded-lg  relative"
           >
-            <div className="w-12 h-12 bg-yellow-500 rounded-full flex items-center justify-center m-auto mb-5">
+            <div className="w-12 h-12 bg-orange-500 rounded-full flex items-center justify-center m-auto mb-5">
               <FontAwesomeIcon icon={faHouse} className="text-white text-2xl" />
             </div>
             <h3 className="text-xl font-semibold mb-4">Residential Services</h3>
@@ -41,7 +41,7 @@ const Services = () => {
             style={animation}
             className="p-6 bg-white shadow-lg rounded-lg"
           >
-            <div className="w-12 h-12 bg-yellow-500 rounded-full flex items-center justify-center m-auto mb-5">
+            <div className="w-12 h-12 bg-orange-500 rounded-full flex items-center justify-center m-auto mb-5">
               <FontAwesomeIcon
                 icon={faDumpster}
                 className="text-white text-2xl"
@@ -59,7 +59,7 @@ const Services = () => {
             style={animation}
             className="p-6 bg-white shadow-lg rounded-lg"
           >
-            <div className="w-12 h-12 bg-yellow-500 rounded-full flex items-center justify-center m-auto mb-5">
+            <div className="w-12 h-12 bg-orange-500 rounded-full flex items-center justify-center m-auto mb-5">
               <FontAwesomeIcon
                 icon={faIndustry}
                 className="text-white text-2xl"
