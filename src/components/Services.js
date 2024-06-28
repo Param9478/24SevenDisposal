@@ -30,8 +30,11 @@ const Services = () => {
             </div>
             <h3 className="text-xl font-semibold mb-4">Residential Services</h3>
             <p className="text-gray-700">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-              euismod bibendum laoreet.
+              Our residential bin rental services make home cleanups a breeze.
+              Whether you're renovating, decluttering, or just need extra help
+              with waste disposal, we offer convenient and reliable bins to suit
+              your needs. Enjoy a hassle-free experience with our easy-to-use
+              services.
             </p>
           </animated.div>
           <animated.div
@@ -46,8 +49,10 @@ const Services = () => {
             </div>
             <h3 className="text-xl font-semibold mb-4">Commercial Services</h3>
             <p className="text-gray-700">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-              euismod bibendum laoreet.
+              For businesses aiming to maintain a clean and efficient workspace,
+              our commercial bin rental services offer the perfect solution. We
+              provide a range of bin sizes to ensure seamless and compliant
+              waste disposal for your business needs.
             </p>
           </animated.div>
           <animated.div
@@ -62,8 +67,10 @@ const Services = () => {
             </div>
             <h3 className="text-xl font-semibold mb-4">Industrial Services</h3>
             <p className="text-gray-700">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-              euismod bibendum laoreet.
+              Our industrial services cater to the most demanding waste
+              management requirements. Ideal for large construction projects and
+              ongoing industrial operations, our robust bins provide reliable
+              and efficient waste disposal to keep your projects on track.
             </p>
           </animated.div>
         </div>

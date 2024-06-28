@@ -6,6 +6,7 @@ import ImageRow from './ImageRow';
 import { useSpring, animated } from 'react-spring';
 import smallBin from '../../assets/12YardBin.png';
 import mediumBin from '../../assets/20YardBin.jpeg';
+import lgBin from '../../assets/40yardBin.webp';
 
 export default function OurBins() {
   const settings = {
@@ -41,17 +42,7 @@ export default function OurBins() {
             <h1 className="text-center text-2xl mt-2">20 Yard Bin</h1>
           </div>
           <div>
-            <ImageRow
-              imgSrc="https://gflenv.com/wp-content/uploads/2020/12/Business-Solid_10-yard-rolloff_Side_End-scaled.jpg"
-              alt="10 Yard"
-            />
-            <h1 className="text-center text-2xl mt-2">20 Yard Bin</h1>
-          </div>
-          <div>
-            <ImageRow
-              imgSrc="https://gflenv.com/wp-content/uploads/2020/12/Business-Solid_10-yard-rolloff_Side_End-scaled.jpg"
-              alt="10 Yard"
-            />
+            <ImageRow imgSrc={lgBin} alt="10 Yard" />
             <h1 className="text-center text-2xl mt-2">40 Yard Bin</h1>
           </div>
         </Slider>
