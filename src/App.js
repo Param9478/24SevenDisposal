@@ -4,6 +4,7 @@ import Header from './components/Homepage/Header';
 import Footer from './components/Homepage/Footer';
 import ContactUs from './components/ContactUs';
 import Homepage from './components/Homepage';
+import ScrollToTop from './components/ScrollToTop';
 
 function App() {
   const contactFormRef = useRef(null);
@@ -14,7 +15,8 @@ function App() {
     <Router>
       <div className="overflow-x-hidden">
         <Header />
-
+        <ScrollToTop />
+        {/* This ensures the page scrolls to the top on route change */}
         <Routes>
           <Route
             path="/"
