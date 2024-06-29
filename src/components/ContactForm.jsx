@@ -1,16 +1,20 @@
 import React from 'react';
 
-const Contact = () => {
+const ContactForm = ({ contactFormRef }) => {
   return (
-    <section id="contact" className="mt-20 py-20 bg-gray-800 text-white">
+    <section
+      id="contactForm"
+      ref={contactFormRef}
+      className="mt-5 py-20 bg-gray-800 text-white px-6"
+    >
       <div className="container mx-auto text-center">
-        <h2 className="text-3xl font-bold mb-10">Contact Us</h2>
-        <p className="text-lg mb-8 max-w-3xl mx-auto">
+        <h2 className="text-3xl font-bold mb-5">Contact Us</h2>
+        <p className="mb-5 text-sm">
           Have questions or need assistance? Fill out the form below and our
-          team will get back to you shortly
+          team will get back to you shortly!
         </p>
         <form className="max-w-lg mx-auto">
-          <div className="flex flex-wrap -mx-2">
+          <div className="flex flex-wrap mx-2">
             <div className="w-full md:w-1/2 px-2 mb-4">
               <input
                 type="text"
@@ -47,4 +51,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default ContactForm;

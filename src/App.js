@@ -1,32 +1,43 @@
-import React from 'react';
-import Header from './components/Header';
-import Banner from './components/Banner';
-import Services from './components/Services';
-
-import Contact from './components/Contact';
-import Footer from './components/Footer';
-import OurBins from './components/ourBins';
-import SafeSecure from './components/SafeSecure';
-import Testimonials from './components/testimonials';
+import React, { useRef } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Header from './components/Homepage/Header';
+import Footer from './components/Homepage/Footer';
+import ContactUs from './components/ContactUs';
+import Homepage from './components/Homepage';
 
 function App() {
+  const contactFormRef = useRef(null);
+  const handleScrollToContactForm = () => {
+    contactFormRef.current.scrollIntoView({ behavior: 'smooth' });
+  };
   return (
-    <div>
-      {/* Content here */}
+    <Router>
+      <div className="overflow-x-hidden">
+        <Header />
 
-      <Header />
-      <div className="px-2 sm:px-6 lg:px-0">
-        <main>
-          <Banner />
-          <OurBins />
-          <Services />
-          <SafeSecure />
-          <Testimonials />
-          <Contact />
-        </main>
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <Homepage
+                handleScrollToContactForm={handleScrollToContactForm}
+                contactFormRef={contactFormRef}
+              />
+            }
+          />
+          <Route
+            path="/contact"
+            element={
+              <ContactUs
+                contactFormRef={contactFormRef}
+                handleScrollToContactForm={handleScrollToContactForm}
+              />
+            }
+          />
+        </Routes>
         <Footer />
       </div>
-    </div>
+    </Router>
   );
 }
 

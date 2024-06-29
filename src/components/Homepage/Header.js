@@ -1,8 +1,8 @@
 import React from 'react';
-// import { a } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { Disclosure } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
-import Logo from '../assets/logo.png';
+import Logo from '../../assets/logo.png';
 
 const navigation = [
   { name: 'Home', path: '/' },
@@ -20,7 +20,7 @@ const Header = () => {
     >
       {({ open }) => (
         <>
-          <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+          <div className="mx-auto max-w-8xl px-2 sm:px-6 lg:px-8">
             <div className="relative flex h-16 items-center justify-between">
               {/* Mobile menu button*/}
               <div className="absolute inset-y-0 right-0 flex items-center sm:hidden">
@@ -32,16 +32,16 @@ const Header = () => {
                   )}
                 </Disclosure.Button>
               </div>
-              <a to="/" className="flex flex-shrink-0 items-center">
+              <Link to="/" className="flex flex-shrink-0 items-center">
                 <img alt="boondocks" className="h-14" src={Logo} />
                 <h5 className="hidden sm:block text-white ml-2">
                   24SEVEN DISPOSAL
                 </h5>
-              </a>
+              </Link>
               <div className="hidden sm:ml-6 sm:block">
                 <div className="flex space-x-4 items-center h-full">
                   {navigation.map((item) => (
-                    <a
+                    <Link
                       key={item.name}
                       to={item.path}
                       target={item.target}
@@ -53,7 +53,7 @@ const Header = () => {
                       aria-current={item.current ? 'page' : undefined}
                     >
                       {item.name}
-                    </a>
+                    </Link>
                   ))}
                 </div>
               </div>
@@ -63,7 +63,7 @@ const Header = () => {
           <Disclosure.Panel className="sm:hidden">
             <div className="space-y-1 px-2 pb-3 pt-2">
               {navigation.map((item) => (
-                <a
+                <Link
                   key={item.name}
                   to={item.path}
                   target={item.target}
@@ -75,7 +75,7 @@ const Header = () => {
                   aria-current={item.current ? 'page' : undefined}
                 >
                   {item.name}
-                </a>
+                </Link>
               ))}
             </div>
           </Disclosure.Panel>

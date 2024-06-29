@@ -15,7 +15,7 @@ const Services = () => {
   });
 
   return (
-    <section id="services" className="py-20 bg-gray-100">
+    <section id="services" className="py-20 p-6 bg-gray-100">
       <div className="container mx-auto text-center">
         <animated.div style={animation}>
           <h2 className="text-3xl font-bold mb-10">Our Services</h2>

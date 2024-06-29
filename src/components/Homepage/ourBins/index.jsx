@@ -4,9 +4,9 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import ImageRow from './ImageRow';
 import { useSpring, animated } from 'react-spring';
-import smallBin from '../../assets/12YardBin.png';
-import mediumBin from '../../assets/20YardBin.jpeg';
-import lgBin from '../../assets/40yardBin.webp';
+import smallBin from '../../../assets/12YardBin.png';
+import mediumBin from '../../../assets/20YardBin.jpeg';
+import lgBin from '../../../assets/40yardBin.webp';
 
 export default function OurBins() {
   const settings = {
