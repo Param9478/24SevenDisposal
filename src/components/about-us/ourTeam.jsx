@@ -7,7 +7,7 @@ export default function OurTeam() {
         <div className="flex lg:flex-row flex-col items-center lg:text-left text-center">
           <div className="w-full">
             {/* Text Section */}
-            <h1 className="text-2xl mb-4">Why Choose Us?</h1>
+            <h2 className="text-3xl font-bold mb-2">Why Choose Us?</h2>
           </div>
 
           {/* Card Section */}

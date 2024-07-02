@@ -19,6 +19,7 @@ const ContactForm = ({ contactFormRef }) => {
           method="POST" // Specify POST method for Netlify forms
           data-netlify="true" // Enable Netlify form handling
           className="max-w-lg mx-auto"
+          netlify
         >
           <input type="hidden" name="form-name" value="contact" />{' '}
           {/* Hidden field for Netlify form name */}
