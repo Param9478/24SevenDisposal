@@ -17,7 +17,7 @@ const ContactForm = ({ contactFormRef }) => {
         <form
           name="contact"
           method="POST" // Specify POST method for Netlify forms
-          data-netlify="true" // Enable Netlify form handling
+          // data-netlify="true" // Enable Netlify form handling
           className="max-w-lg mx-auto"
           netlify
         >
