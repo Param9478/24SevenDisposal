@@ -29,7 +29,7 @@ export default function OurStory() {
       {/* Card Section */}
       <div className="flex-1">
         <div className="w-full m-auto">
-          <p className="text-sm font-light text-gray-700 w-full lg:w-3/4 m-auto lg:text-left text-center">
+          <p className="text-sm font-light text-gray-700 w-full m-auto lg:text-left text-center">
             Welcome to 24Seven Disposal, where reliability meets efficiency. Our
             team of experienced professionals is dedicated to providing
             top-notch dump truck services tailored to meet your needs. Whether
@@ -37,7 +37,7 @@ export default function OurStory() {
             job, we’re here to ensure your materials are transported safely and
             on time. With a commitment to excellence and customer satisfaction,
             we are your go-to solution for all your hauling needs. Discover the
-            difference with [Your Company Name], where every load is handled
+            difference with 24Seven Disposal, where every load is handled
             with care and precision.
           </p>
           <div className="mt-8 sm:mt-16">

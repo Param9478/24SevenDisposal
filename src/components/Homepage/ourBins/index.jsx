@@ -1,24 +1,25 @@
 import React from 'react';
-import Slider from 'react-slick';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
-import ImageRow from './ImageRow';
 import { useSpring, animated } from 'react-spring';
-import smallBin from '../../../assets/12YardBin.png';
-import mediumBin from '../../../assets/20YardBin.jpeg';
-import lgBin from '../../../assets/40yardBin.webp';
+import bin1 from '../../../assets/12YardBin.png';
+import bin2 from '../../../assets/20YardBin.jpeg';
+import bin3 from '../../../assets/40yardBin.webp';
+import ImgSlider from '../../ImgSlider';
 
 export default function OurBins() {
-  const settings = {
-    dots: true,
-    infinite: true,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: true,
-    speed: 2000,
-    autoplaySpeed: 5000,
-    cssEase: 'linear',
-  };
+  const binData = [
+    {
+      name: '14 Yard Bin',
+      imgSrc: bin1,
+    },
+    {
+      name: '20 Yard Bin',
+      imgSrc: bin2,
+    },
+    {
+      name: '40 Yard Bin',
+      imgSrc: bin3,
+    },
+  ];
 
   const animation = useSpring({
     from: { opacity: 0, transform: 'translateX(-100px)' },
@@ -32,20 +33,8 @@ export default function OurBins() {
         <animated.div style={animation}>
           <h2 className="text-3xl font-bold mb-10">Book Our Bins</h2>
         </animated.div>
-        <Slider {...settings}>
-          <div>
-            <ImageRow imgSrc={smallBin} alt="12 Yard" />
-            <h1 className="text-center text-2xl mt-2">12 Yard Bin</h1>
-          </div>
-          <div>
-            <ImageRow imgSrc={mediumBin} alt="20 Yard" />
-            <h1 className="text-center text-2xl mt-2">20 Yard Bin</h1>
-          </div>
-          <div>
-            <ImageRow imgSrc={lgBin} alt="10 Yard" />
-            <h1 className="text-center text-2xl mt-2">40 Yard Bin</h1>
-          </div>
-        </Slider>
+
+        <ImgSlider data={binData} />
       </div>
     </section>
   );

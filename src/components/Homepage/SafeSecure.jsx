@@ -1,9 +1,8 @@
-
 import React from 'react';
 import BinPic from '../../assets/binDouble.jpg';
 import junkRemoval from '../../assets/junkRemoval.jpg';
 
-const SafeSecure = ({ title, text, imageUrl, altText }) => {
+const SafeSecure = ({ altText }) => {
   return (
     <>
       <section
