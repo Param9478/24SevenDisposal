@@ -5,6 +5,7 @@ import Footer from './components/Homepage/Footer';
 import ContactUs from './components/ContactUs';
 import Homepage from './components/Homepage';
 import ScrollToTop from './components/ScrollToTop';
+import AboutUs from './components/about-us';
 
 function App() {
   const contactFormRef = useRef(null);
@@ -33,6 +34,15 @@ function App() {
               <ContactUs
                 contactFormRef={contactFormRef}
                 handleScrollToContactForm={handleScrollToContactForm}
+              />
+            }
+          />
+          <Route
+            path="/about-us"
+            element={
+              <AboutUs
+                handleScrollToContactForm={handleScrollToContactForm}
+                contactFormRef={contactFormRef}
               />
             }
           />
