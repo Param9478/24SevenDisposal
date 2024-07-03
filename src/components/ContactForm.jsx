@@ -13,12 +13,7 @@ const ContactForm = ({ contactFormRef }) => {
           Have questions or need assistance? Fill out the form below and our
           team will get back to you shortly!
         </p>
-        <form
-          name="contact"
-          method="POST"
-          data-netlify="true"
-          className="max-w-lg mx-auto"
-        >
+        <form name="contact" method="POST" className="max-w-lg mx-auto">
           <input type="hidden" name="form-name" value="contact" />
           <div className="flex flex-wrap mx-2">
             <div className="w-full md:w-1/2 px-2 mb-4">
