@@ -13,40 +13,39 @@ const ContactForm = ({ contactFormRef }) => {
           Have questions or need assistance? Fill out the form below and our
           team will get back to you shortly!
         </p>
-        {/* Form with Netlify attributes */}
         <form
           name="contact"
-          // method="POST" // Specify POST method for Netlify forms
-          // data-netlify="true"
-          netlify
-          // className="max-w-lg mx-auto"
-          // onSubmit="submit"
+          method="POST"
+          data-netlify="true"
+          className="max-w-lg mx-auto"
         >
-          <input type="hidden" name="form-name" value="contact" />{' '}
-          {/* Hidden field for Netlify form name */}
+          <input type="hidden" name="form-name" value="contact" />
           <div className="flex flex-wrap mx-2">
             <div className="w-full md:w-1/2 px-2 mb-4">
               <input
                 type="text"
-                name="name" // Name attribute for form data mapping
+                name="name"
                 placeholder="Your Name"
                 className="w-full bg-gray-700 text-white py-2 px-4 rounded-lg outline-none focus:bg-gray-600"
+                required
               />
             </div>
             <div className="w-full md:w-1/2 px-2 mb-4">
               <input
                 type="email"
-                name="email" // Name attribute for form data mapping
+                name="email"
                 placeholder="Your Email"
                 className="w-full bg-gray-700 text-white py-2 px-4 rounded-lg outline-none focus:bg-gray-600"
+                required
               />
             </div>
             <div className="w-full px-2 mb-4">
               <textarea
-                name="message" // Name attribute for form data mapping
+                name="message"
                 placeholder="Your Message"
                 rows="4"
                 className="w-full bg-gray-700 text-white py-2 px-4 rounded-lg outline-none focus:bg-gray-600"
+                required
               ></textarea>
             </div>
             <div className="w-full px-2 mb-4">
