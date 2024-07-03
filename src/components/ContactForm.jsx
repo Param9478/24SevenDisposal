@@ -17,8 +17,9 @@ const ContactForm = ({ contactFormRef }) => {
         <form
           name="contact"
           // method="POST" // Specify POST method for Netlify forms
-          data-netlify="true"
-          className="max-w-lg mx-auto"
+          // data-netlify="true"
+          netlify
+          // className="max-w-lg mx-auto"
           // onSubmit="submit"
         >
           <input type="hidden" name="form-name" value="contact" />{' '}
