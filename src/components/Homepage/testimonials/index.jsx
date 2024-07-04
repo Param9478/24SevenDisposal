@@ -1,10 +1,9 @@
-// Testimonials.js
 import React from 'react';
-import ReviewCard from './reviewCard';
-import bannerImage from '../../../assets/truck7.webp';
+import { useSpring, animated } from 'react-spring';
+import TestimonialSlider from './testimonialSlider'; // Adjust the import path as per your project structure
 
 const Testimonials = () => {
-  const reviewerImages = [
+  const reviewerData = [
     {
       review:
         "'We used 24Seven Disposal for our home renovation project, and I couldn't be happier with their service. The bins were delivered on time, and the staff was extremely professional and helpful. They made the entire process smooth and stress-free. Highly recommend!'",
@@ -22,28 +21,21 @@ const Testimonials = () => {
     },
   ];
 
+  const animation = useSpring({
+    from: { opacity: 0, transform: 'translateX(-100px)' },
+    to: { opacity: 1, transform: 'translateX(0)' },
+    config: { duration: 1000 },
+  });
+
   return (
-    <div>
-      <div className="relative mt-8">
-        <img
-          src={bannerImage}
-          alt="Header Background"
-          className="object-cover h-80 w-full brightness-50"
-        />
-        {/* Text Content */}
-        <div className="absolute text-center sm:text-left top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white z-20">
-          <div className="sm:m-0 m-auto">
-            <h2 className="text-3xl font-bold mb-10">What They Say</h2>
-          </div>
-        </div>
+    <section id="testimonials" className="py-20 bg-gray-100">
+      <div className="container mx-auto text-center px-4 sm:px-6 lg:px-8">
+        <animated.div style={animation}>
+          <h2 className="text-3xl font-bold mb-10">What They Say</h2>
+        </animated.div>
+        <TestimonialSlider testimonials={reviewerData} />
       </div>
-      {/* Review Cards */}
-      <div className="flex flex-col lg:flex-row justify-center -mt-24 lg:space-x-8 max-w-6xl m-auto">
-        {reviewerImages.map((data, index) => (
-          <ReviewCard key={index} reviewerData={data} />
-        ))}
-      </div>
-    </div>
+    </section>
   );
 };
 

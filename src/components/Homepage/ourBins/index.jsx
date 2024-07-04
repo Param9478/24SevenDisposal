@@ -9,14 +9,17 @@ export default function OurBins() {
   const binData = [
     {
       name: '14 Yard Bin',
+      dimension: '14x8x4',
       imgSrc: bin1,
     },
     {
       name: '20 Yard Bin',
+      dimension: '20x8x4',
       imgSrc: bin2,
     },
     {
       name: '40 Yard Bin',
+      dimension: '20x8x7',
       imgSrc: bin3,
     },
   ];
