@@ -7,9 +7,9 @@ const SafeSecure = ({ altText }) => {
     <>
       <section
         id="safeSecure"
-        className="container mx-auto flex flex-col md:flex-row items-center py-20 text-center p-6"
+        className="container mx-auto flex flex-col md:flex-row items-center py-20 p-6"
       >
-        <div className="md:w-1/2 md:pr-4">
+        <div className="md:w-1/2 md:pr-4 text-center sm:text-left">
           <h2 className="text-2xl font-bold mb-2">Junk Removal Bin Rentals</h2>
           <p className="text-base">
             Want to get rid of junk? 24Seven Disposal offers comprehensive junk
@@ -20,7 +20,7 @@ const SafeSecure = ({ altText }) => {
             Trust 24Seven Disposal for all your junk removal needs.
           </p>
         </div>
-        <div className="md:w-1/2 md:pl-4 mt-4 md:mt-0">
+        <div className="md:w-1/2 md:pl-4 mt-4 md:mt-0 ">
           <img
             src={junkRemoval}
             alt={altText}
@@ -39,7 +39,7 @@ const SafeSecure = ({ altText }) => {
             className="w-full m-auto h-96 object-cover lg:mt-0 rounded-xl px-1"
           />
         </div>
-        <div className="md:w-1/2 md:pr-4 order-1 md:order-2">
+        <div className="md:w-1/2 md:pr-4 order-1 md:order-2 text-center sm:text-left">
           <h2 className="text-2xl font-bold mb-2">Safe & Secure Bins</h2>
           <p className="text-base">
             At 24Seven Disposal, we are dedicated to offering bins that
