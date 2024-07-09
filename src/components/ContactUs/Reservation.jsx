@@ -2,7 +2,7 @@ import React from 'react';
 
 const Reservation = ({ handleScrollToContactForm }) => {
   const handleCall = () => {
-    window.location.href = 'tel:+16477029393';
+    window.location.href = 'tel:+13653237373';
   };
 
   return (
