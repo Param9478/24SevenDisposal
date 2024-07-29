@@ -34,7 +34,7 @@ const Footer = () => {
           <h3 className="text-xl font-medium mb-2">Contact Us</h3>
           <div className="lg:flex space-x-2">
             <p className="font-light text-sm">
-              (+1) 647-702-9393 <br />
+              (+1) 365-323-7373 <br />
             </p>
           </div>
         </div>
