@@ -1,11 +1,11 @@
 import React from 'react';
-import BinPic from '../../assets/binDouble.jpg';
-import junkRemoval from '../../assets/junkRemoval.jpg';
+// import BinPic from '../../assets/safeSecure.jpg';
+import junkRemoval from '../../assets/junk-remove-bin.jpg';
 
 const SafeSecure = ({ altText }) => {
   return (
     <>
-      <section
+      {/* <section
         id="safeSecure"
         className="container mx-auto flex flex-col md:flex-row items-center py-20 p-6"
       >
@@ -15,7 +15,7 @@ const SafeSecure = ({ altText }) => {
             Want to get rid of junk? 24Seven Disposal offers comprehensive junk
             removal services in Brampton and the GTA to help you complete any
             construction project. Our services include residential and
-            commercial cleanouts, removal of renovation debris, storage unit
+            commercial cleanups, removal of renovation debris, storage unit
             cleanups, junk removal from moves, and landscaping waste removal.
             Trust 24Seven Disposal for all your junk removal needs.
           </p>
@@ -24,19 +24,19 @@ const SafeSecure = ({ altText }) => {
           <img
             src={junkRemoval}
             alt={altText}
-            className="w-full m-auto h-96 object-cover lg:mt-0 rounded-xl px-1"
+            className="w-full m-auto h-96 object-cover lg:mt-0 rounded-xl px-1 scale-90"
           />
         </div>
-      </section>
+      </section> */}
       <section
         id="safeSecure"
         className="container mx-auto flex flex-col-reverse md:flex-row items-center py-20 text-center p-6"
       >
         <div className="md:w-1/2 md:pr-4 mt-4 md:mt-0 order-1 md:order-2">
           <img
-            src={BinPic}
+            src={junkRemoval}
             alt={altText}
-            className="w-full m-auto h-96 object-cover lg:mt-0 rounded-xl px-1"
+            className="w-full m-auto h-96 object-cover lg:mt-0 rounded-xl px-1 scale-90"
           />
         </div>
         <div className="md:w-1/2 md:pr-4 order-1 md:order-2 text-center sm:text-left">

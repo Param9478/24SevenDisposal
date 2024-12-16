@@ -1,21 +1,21 @@
 import React from 'react';
-import bin1 from '../../assets/12YardBin.png';
-import bin2 from '../../assets/20YardBin.jpeg';
-import bin3 from '../../assets/40yardBin.webp';
+import bin10y from '../../assets/bin10Y.jpg';
+import bin14y from '../../assets/bin14Y.jpg';
+import bin20y from '../../assets/bin20Y.jpg';
 import ImgSlider from '../ImgSlider';
 
 const binData = [
   {
+    name: '10 Yard Bin',
+    imgSrc: bin10y,
+  },
+  {
     name: '14 Yard Bin',
-    imgSrc: bin1,
+    imgSrc: bin14y,
   },
   {
     name: '20 Yard Bin',
-    imgSrc: bin2,
-  },
-  {
-    name: '40 Yard Bin',
-    imgSrc: bin3,
+    imgSrc: bin20y,
   },
 ];
 

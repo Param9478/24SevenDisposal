@@ -29,20 +29,20 @@ function App() {
             }
           />
           <Route
-            path="/contact"
-            element={
-              <ContactUs
-                contactFormRef={contactFormRef}
-                handleScrollToContactForm={handleScrollToContactForm}
-              />
-            }
-          />
-          <Route
             path="/about-us"
             element={
               <AboutUs
                 handleScrollToContactForm={handleScrollToContactForm}
                 contactFormRef={contactFormRef}
+              />
+            }
+          />
+          <Route
+            path="/contact"
+            element={
+              <ContactUs
+                contactFormRef={contactFormRef}
+                handleScrollToContactForm={handleScrollToContactForm}
               />
             }
           />

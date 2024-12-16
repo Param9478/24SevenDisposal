@@ -2,7 +2,8 @@ import ContactForm from '../ContactForm';
 import Banner from './Banner';
 import SafeSecure from './SafeSecure';
 import Services from './Services';
-import OurBins from './ourBins';
+// import OurBins from './ourBins';
+import BinSlider from './ourBins/binSlider';
 import Testimonials from './testimonials';
 
 const Homepage = ({ contactFormRef, handleScrollToContactForm }) => {
@@ -14,9 +15,9 @@ const Homepage = ({ contactFormRef, handleScrollToContactForm }) => {
        commercial, and industrial needs."
         handleScrollToContactForm={handleScrollToContactForm}
       />
-      <OurBins />
-      <Services />
+      <BinSlider />
       <SafeSecure />
+      <Services />
       <Testimonials />
       <ContactForm contactFormRef={contactFormRef} />
     </div>

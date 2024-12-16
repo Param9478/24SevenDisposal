@@ -1,4 +1,4 @@
-import bin from '../../assets/binDouble.jpg';
+import bin from '../../assets/junk-remove-bin.jpg';
 import AboutOptions from './aboutOptions';
 export default function OurStory() {
   return (

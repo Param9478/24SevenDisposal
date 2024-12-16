@@ -1,26 +1,26 @@
 import React from 'react';
 import { useSpring, animated } from 'react-spring';
-import bin1 from '../../../assets/12YardBin.png';
-import bin2 from '../../../assets/20YardBin.jpeg';
-import bin3 from '../../../assets/40yardBin.webp';
+import bin10y from '../../../assets/bin10Y.jpg';
+import bin14y from '../../../assets/bin14Y.jpg';
+import bin20y from '../../../assets/bin20Y.jpg';
 import ImgSlider from '../../ImgSlider';
 
 export default function OurBins() {
   const binData = [
     {
+      name: '10 Yard Bin',
+      dimension: '10x8x4',
+      imgSrc: bin10y,
+    },
+    {
       name: '14 Yard Bin',
-      dimension: '14x8x4',
-      imgSrc: bin1,
+      dimension: '12x8x4',
+      imgSrc: bin14y,
     },
     {
       name: '20 Yard Bin',
-      dimension: '20x8x4',
-      imgSrc: bin2,
-    },
-    {
-      name: '40 Yard Bin',
-      dimension: '20x8x7',
-      imgSrc: bin3,
+      dimension: '17x8x4.5',
+      imgSrc: bin20y,
     },
   ];
 
